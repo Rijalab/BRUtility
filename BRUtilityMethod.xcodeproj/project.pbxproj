@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		004DAF67216F36E400AEFCFC /* BRUtilityMethod.h in Headers */ = {isa = PBXBuildFile; fileRef = 004DAF65216F36E400AEFCFC /* BRUtilityMethod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		004DAF6E216F376000AEFCFC /* BRExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004DAF6D216F376000AEFCFC /* BRExtensions.swift */; };
+		004DAF70216F4F6E00AEFCFC /* BRAPIHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 004DAF6F216F4F6E00AEFCFC /* BRAPIHandler.swift */; };
+		00B09146216F6C6F00939ADC /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 00B09145216F6C6F00939ADC /* LICENSE */; };
+		9CB90503AB7CD0903789F680 /* Pods_BRUtilityMethod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63C1027007220E629F0FFE8D /* Pods_BRUtilityMethod.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		004DAF62216F36E400AEFCFC /* BRUtilityMethod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BRUtilityMethod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		004DAF65216F36E400AEFCFC /* BRUtilityMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRUtilityMethod.h; sourceTree = "<group>"; };
 		004DAF66216F36E400AEFCFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		004DAF6D216F376000AEFCFC /* BRExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRExtensions.swift; sourceTree = "<group>"; };
+		004DAF6F216F4F6E00AEFCFC /* BRAPIHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BRAPIHandler.swift; sourceTree = "<group>"; };
+		00B09145216F6C6F00939ADC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		3D5A40ECAA9E08F554F30114 /* Pods-BRUtilityMethod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRUtilityMethod.release.xcconfig"; path = "Pods/Target Support Files/Pods-BRUtilityMethod/Pods-BRUtilityMethod.release.xcconfig"; sourceTree = "<group>"; };
+		63C1027007220E629F0FFE8D /* Pods_BRUtilityMethod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRUtilityMethod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9537CDE05679D6110FD6D5CD /* Pods-BRUtilityMethod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRUtilityMethod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BRUtilityMethod/Pods-BRUtilityMethod.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CB90503AB7CD0903789F680 /* Pods_BRUtilityMethod.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -30,8 +41,11 @@
 		004DAF58216F36E400AEFCFC = {
 			isa = PBXGroup;
 			children = (
+				00B09145216F6C6F00939ADC /* LICENSE */,
 				004DAF64216F36E400AEFCFC /* BRUtilityMethod */,
 				004DAF63216F36E400AEFCFC /* Products */,
+				BF39048464E8DC9DD33F3420 /* Pods */,
+				EB3AF5B356ADAD73780DB457 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -48,8 +62,27 @@
 			children = (
 				004DAF65216F36E400AEFCFC /* BRUtilityMethod.h */,
 				004DAF66216F36E400AEFCFC /* Info.plist */,
+				004DAF6D216F376000AEFCFC /* BRExtensions.swift */,
+				004DAF6F216F4F6E00AEFCFC /* BRAPIHandler.swift */,
 			);
 			path = BRUtilityMethod;
+			sourceTree = "<group>";
+		};
+		BF39048464E8DC9DD33F3420 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9537CDE05679D6110FD6D5CD /* Pods-BRUtilityMethod.debug.xcconfig */,
+				3D5A40ECAA9E08F554F30114 /* Pods-BRUtilityMethod.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB3AF5B356ADAD73780DB457 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63C1027007220E629F0FFE8D /* Pods_BRUtilityMethod.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +103,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 004DAF6A216F36E400AEFCFC /* Build configuration list for PBXNativeTarget "BRUtilityMethod" */;
 			buildPhases = (
+				0CFF1E016302236BE0D004D9 /* [CP] Check Pods Manifest.lock */,
 				004DAF5D216F36E400AEFCFC /* Headers */,
 				004DAF5E216F36E400AEFCFC /* Sources */,
 				004DAF5F216F36E400AEFCFC /* Frameworks */,
@@ -95,6 +129,7 @@
 				TargetAttributes = {
 					004DAF61216F36E400AEFCFC = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -120,16 +155,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00B09146216F6C6F00939ADC /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CFF1E016302236BE0D004D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BRUtilityMethod-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		004DAF5E216F36E400AEFCFC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				004DAF6E216F376000AEFCFC /* BRExtensions.swift in Sources */,
+				004DAF70216F4F6E00AEFCFC /* BRAPIHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +323,9 @@
 		};
 		004DAF6B216F36E400AEFCFC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9537CDE05679D6110FD6D5CD /* Pods-BRUtilityMethod.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +342,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rijalab.BRUtilityMethod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +350,9 @@
 		};
 		004DAF6C216F36E400AEFCFC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3D5A40ECAA9E08F554F30114 /* Pods-BRUtilityMethod.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
